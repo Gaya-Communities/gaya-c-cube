@@ -1,0 +1,41 @@
+name: connectycube_sdk
+description: Flutter SDK for messaging, video calling and push notifications. WebRTC and XMPP based.
+version: 2.4.1
+homepage: https://connectycube.com
+issue_tracker: https://github.com/ConnectyCube/connectycube-flutter-sdk-releases
+documentation: https://developers.connectycube.com/flutter/
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  http: ^0.13.5               # To performing REST queries
+  http_parser: ^4.0.1
+  crypto: ^3.0.2              # For generation sha signatures
+  uuid: ^3.0.6                # To generate unique IDs
+  intl: ^0.17.0               # For support custom date formats
+  mime: ^1.0.2                # To get mime type of file
+  xmpp_stone: 0.4.4-dev.2     # XMPP protocol implementation
+#  xmpp_stone:
+#    path: ../xmpp_dart/ # XMPP protocol implementation
+  platform_device_id: ^1.0.1  # To get unique device id
+  objectid: ^2.1.0            # To get BSON object id
+  path: ^1.8.1
+  flutter_webrtc: 0.9.24      # Calls
+#  flutter_webrtc:
+#    path: ../flutter-webrtc
+#    git:
+#      url: https://github.com/flutter-webrtc/flutter-webrtc.git
+#      ref: main
+  webrtc_interface: 1.0.11
+  dart_webrtc: 1.0.15
+  web_socket_channel: ^2.2.0  # Conference Calls WS connection
+  collection: ^1.16.0
+  universal_io: ^2.0.4        # Cross-platform 'dart:io' lib
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
